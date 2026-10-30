@@ -1,0 +1,49 @@
+{
+  "IntervaloSegundos": 10,
+  "DiasRecentes": 3,
+  "SegundosEstabilizar": 3,
+  "Host": "0.0.0.0",
+  "Porta": 8080,
+  "OcorrenciasAceitas": [
+    "01"
+  ],
+  "Regras": {
+    "TITULO_AUSENTE_TXT": "alerta",
+    "TITULO_SEM_XML": "alerta",
+    "VENCIMENTO": "alerta",
+    "VALOR": "alerta",
+    "ENDERECO": "aviso",
+    "CEP": "aviso",
+    "NF_AUSENTE": "alerta",
+    "DUPLICADO_TXT": "alerta",
+    "CHAVE": "alerta",
+    "OCORRENCIA": "alerta",
+    "SEM_DUPLICATA": "aviso",
+    "REMESSA_DIVIDIDA": "aviso",
+    "RODAPE": "alerta",
+    "SEM_PDF": "aviso",
+    "PDF_VALOR": "alerta",
+    "PDF_VENC": "aviso",
+    "PDF_CLIENTE": "alerta",
+    "PDF_NUMERO": "alerta",
+    "PDF_NAO_LIDO": "aviso"
+  },
+  "PastaRaiz": "C:\\operacoes\\xml",
+  "BancoDados": "demo.db",
+  "AdminInicial": "ADMIN",
+  "FontesZip": [
+    {
+      "Nome": "Plataforma externa",
+      "Pasta": "C:\\operacoes\\zips",
+      "Recursivo": true
+    }
+  ],
+  "PastaPdfs": "C:\\operacoes\\documentos",
+  "Indicantes": {
+    "Ativo": false,
+    "Odbc": "DRIVER={ODBC Driver 17 for SQL Server};SERVER=SEU_SERVIDOR;DATABASE=SEU_BANCO;UID=SEU_USUARIO;PWD=SUA_SENHA;TrustServerCertificate=yes",
+    "Consulta": "SELECT cnpj, gerente FROM dbo.sua_tabela WHERE cnpj IS NOT NULL",
+    "IntervaloHoras": 24,
+    "TimeoutSegundos": 15
+  }
+}

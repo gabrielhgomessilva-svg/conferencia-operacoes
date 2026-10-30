@@ -1,0 +1,6 @@
+config.json
+*.db
+exemplos/
+exemplos_pasta/
+__pycache__/
+*.pyc
